@@ -1,0 +1,1 @@
+export const AVAILABLE_PRODUCTS = ["BTC-USD", "ETH-USD", "XRP-USD", "LTC-USD"];

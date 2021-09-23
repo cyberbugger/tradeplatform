@@ -1,35 +1,37 @@
-import { DownOutlined } from "@ant-design/icons";
-import { Menu, Switch, Dropdown, Space, Button } from "antd";
+import { Button, Row, Select, Spin } from "antd";
 import { useTranslation } from "react-i18next";
-import { SubscribedProductProps } from "../MarketPlatform/types";
+import { SubscribedProductProps } from "./types";
+import {createUseStyles} from 'react-jss'
 
-export const SubscribedProduct = ({availableProducts, selectedProduct, onSelectProduct} : SubscribedProductProps) => {
+const useStyles = createUseStyles({
+    loader: {
+        margin: '0 20px'
+    }
+  })
+
+export const SubscribedProduct = (props : SubscribedProductProps) => {
     const { t } = useTranslation();
-
-    const menu = (
-        <Menu activeKey={selectedProduct} onClick={e => onSelectProduct(e.key)}>
-            {availableProducts.map(p => <Menu.Item key={p}>{p}</Menu.Item>)}
-        </Menu>
-    );
+    const classes = useStyles();
+    const {availableProducts, selectedProduct, onSelectProduct, isDisabled} = props;
 
     return (
-        <Space direction="vertical">
-            {selectedProduct ?
-                <Space direction="horizontal">
-                    <span>{selectedProduct}</span>
-                    <Switch checked={true} onChange={() => onSelectProduct(undefined)} />
-                </Space>
-                : null
-            }
-            <Dropdown.Button overlay={menu} placement="bottomCenter" icon={<DownOutlined />}>
-                {selectedProduct ? selectedProduct : t('dropdown.select')}
-            </Dropdown.Button>
-            {selectedProduct ?
+        <Row align="middle">
+            <Select 
+                placeholder={t('dropdown.select')} 
+                style={{ width: 200 }} 
+                onChange={onSelectProduct}
+                disabled={isDisabled}
+                value={selectedProduct}
+            >
+                {availableProducts.map(p => <Select.Option key={p} value={p}>{p}</Select.Option>)}
+            </Select>
+            {isDisabled && <Spin className={classes.loader}/>}
+
+            {selectedProduct &&
                 <Button type="link" onClick={() => onSelectProduct(undefined)}>
                     {t('dropdown.clear')}
                 </Button>
-                : null
             }
-        </Space>
+        </Row>
     )
 }

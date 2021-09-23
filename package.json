@@ -12,11 +12,15 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "antd": "^4.16.13",
+    "classnames": "^2.3.1",
     "i18next": "^20.6.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-i18next": "^11.12.0",
+    "react-jss": "^10.8.0",
+    "react-loading-skeleton": "^2.2.0",
     "react-scripts": "4.0.3",
+    "react-window": "^1.8.6",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1",
     "websocket": "^1.0.34"
@@ -46,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-window": "^1.8.5",
     "@types/websocket": "^1.0.4"
   }
 }

@@ -21,8 +21,8 @@ export const useLevelUpdateCallback = (
 ) => {
     return useCallback((payload: any) => {
         if (!socket.subscribed) return
-        if (socket.subscribed !== payload.product_id) return
-        if (+new Date() - timer < intervalInMs) return
+        if (socket.subscribed !== payload.product_id) return 
+        if (+new Date() - timer < intervalInMs) return 
         
         const [[ev, price, qty]] = payload.changes
         if (!Math.ceil(qty)) return

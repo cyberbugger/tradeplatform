@@ -1,0 +1,187 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PriceView match snapshot 1`] = `
+<div
+  class="ant-row"
+  style="margin-left: -12px; margin-right: -12px;"
+>
+  <div
+    class="ant-col ant-col-12"
+    style="padding-left: 12px; padding-right: 12px;"
+  >
+    <h4
+      class="ant-typography text-center title-spacing pb-0 "
+    >
+      priceview.bids
+    </h4>
+    <div
+      class="ant-table-wrapper appTable-0-2-1"
+    >
+      <div
+        class="ant-spin-nested-loading"
+      >
+        <div
+          class="ant-spin-container"
+        >
+          <div
+            class="ant-table"
+          >
+            <div
+              class="ant-table-container"
+            >
+              <div
+                class="ant-table-content"
+              >
+                <table
+                  style="table-layout: auto;"
+                >
+                  <colgroup />
+                  <thead
+                    class="ant-table-thead"
+                  >
+                    <tr>
+                      <th
+                        class="ant-table-cell"
+                      >
+                        Price
+                      </th>
+                      <th
+                        class="ant-table-cell"
+                      >
+                        Quantity
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody
+                    class="ant-table-tbody"
+                  >
+                    <tr
+                      class="ant-table-row ant-table-row-level-0"
+                      data-row-key="0"
+                    >
+                      <td
+                        class="ant-table-cell"
+                      >
+                        1
+                      </td>
+                      <td
+                        class="ant-table-cell"
+                      >
+                        0.1
+                      </td>
+                    </tr>
+                    <tr
+                      class="ant-table-row ant-table-row-level-0"
+                      data-row-key="1"
+                    >
+                      <td
+                        class="ant-table-cell"
+                      >
+                        2
+                      </td>
+                      <td
+                        class="ant-table-cell"
+                      >
+                        0.2
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="ant-col ant-col-12"
+    style="padding-left: 12px; padding-right: 12px;"
+  >
+    <h4
+      class="ant-typography text-center title-spacing pb-0 "
+    >
+      priceview.asks
+    </h4>
+    <div
+      class="ant-table-wrapper appTable-0-2-1"
+    >
+      <div
+        class="ant-spin-nested-loading"
+      >
+        <div
+          class="ant-spin-container"
+        >
+          <div
+            class="ant-table"
+          >
+            <div
+              class="ant-table-container"
+            >
+              <div
+                class="ant-table-content"
+              >
+                <table
+                  style="table-layout: auto;"
+                >
+                  <colgroup />
+                  <thead
+                    class="ant-table-thead"
+                  >
+                    <tr>
+                      <th
+                        class="ant-table-cell"
+                      >
+                        Price
+                      </th>
+                      <th
+                        class="ant-table-cell"
+                      >
+                        Quantity
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody
+                    class="ant-table-tbody"
+                  >
+                    <tr
+                      class="ant-table-row ant-table-row-level-0"
+                      data-row-key="0"
+                    >
+                      <td
+                        class="ant-table-cell"
+                      >
+                        1.1
+                      </td>
+                      <td
+                        class="ant-table-cell"
+                      >
+                        0.11
+                      </td>
+                    </tr>
+                    <tr
+                      class="ant-table-row ant-table-row-level-0"
+                      data-row-key="1"
+                    >
+                      <td
+                        class="ant-table-cell"
+                      >
+                        1.2
+                      </td>
+                      <td
+                        class="ant-table-cell"
+                      >
+                        0.12
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

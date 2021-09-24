@@ -22,13 +22,14 @@ export const SubscribedProduct = (props : SubscribedProductProps) => {
                 onChange={onSelectProduct}
                 disabled={isDisabled}
                 value={selectedProduct}
+                data-testid="select-product"
             >
-                {availableProducts.map(p => <Select.Option key={p} value={p}>{p}</Select.Option>)}
+                {availableProducts.map(p => <Select.Option data-testid="select-option" key={p} value={p}>{p}</Select.Option>)}
             </Select>
             {isDisabled && <Spin className={classes.loader}/>}
 
             {selectedProduct &&
-                <Button type="link" onClick={() => onSelectProduct(undefined)}>
+                <Button type="link" data-testid="clear" onClick={() => onSelectProduct(undefined)}>
                     {t('dropdown.clear')}
                 </Button>
             }
